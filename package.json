@@ -1,0 +1,27 @@
+{
+  "name": "wa-bot-mandiri",
+  "version": "1.0.0",
+  "description": "Bot WhatsApp self-hosted (unofficial) berbasis Baileys - plugin system, anti-ban layer, jalan 100% di komputer sendiri.",
+  "main": "index.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "test": "node --test",
+    "lint:syntax": "find . -name \"*.js\" -not -path \"./node_modules/*\" -exec node --check {} \\;"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@whiskeysockets/baileys": "7.0.0-rc14",
+    "@hapi/boom": "^10.0.1",
+    "@cacheable/node-cache": "^3.1.1",
+    "pino": "^10.3.1",
+    "qrcode-terminal": "^0.12.0",
+    "sharp": "^0.35.4",
+    "chalk": "^4.1.2",
+    "dotenv": "^18.0.4"
+  }
+}
