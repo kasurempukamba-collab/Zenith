@@ -1,0 +1,28 @@
+# Dependency & lock artefak build
+node_modules/
+
+# Sesi login WhatsApp & data lokal -- JANGAN PERNAH commit, ini setara password akun
+session/
+data/
+
+# Rahasia
+.env
+.env.*
+!.env.example
+
+# Log
+*.log
+npm-debug.log*
+
+# File sementara dari test suite (test/*.test.js), kalau proses tes terhenti di tengah jalan
+# (mencakup juga turunan seperti .bak / .tmp / .corrupt-* yang dibuat penyimpanan atomik)
+test/.tmp-*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Paket hasil build lokal
+*.zip
